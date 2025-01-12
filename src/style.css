@@ -61,9 +61,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: rgba(21, 5, 76, 0.45) !important;
+  background-color: rgba(14, 21, 40, 0.45) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(37, 146, 113, 0.03) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -76,20 +76,23 @@ button:focus {
 
 .navbar-toggler {
   position: relative !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin: 0 auto !important;
+  padding: 0.25rem 0.75rem !important;
 }
 
 .navbar-toggler span {
+  background-color: #51b3a4 !important;
+  height: 2px !important;
+  width: 25px !important;
+  margin: 5px 0 !important;
   display: block !important;
-  background-color: #be50f4 !important;
-  height: 4px !important;
-  width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  transform: rotate(0deg) !important;
-  left: 0 !important;
-  opacity: 1 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.navbar-toggler:hover span {
+  background-color: #64ffda !important;
 }
 
 .navbar-toggler:focus,
@@ -105,9 +108,9 @@ button:focus {
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
-  left: 12px !important;
+  left: 50% !important;
   top: 10px !important;
-  transform: rotate(135deg) !important;
+  transform: translateX(-50%) rotate(135deg) !important;
   opacity: 0.9 !important;
 }
 
@@ -119,9 +122,9 @@ button:focus {
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute !important;
-  left: 12px !important;
+  left: 50% !important;
   top: 10px !important;
-  transform: rotate(-135deg) !important;
+  transform: translateX(-50%) rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
 
@@ -255,6 +258,15 @@ button:focus {
   margin: 0 auto;
 }
 
+.home-img {
+  max-width: 100%;
+  object-fit: contain;
+  width: 400px;
+  height: auto;
+  padding-left: 140px;
+  padding-top: 50px;
+}
+
 .heading {
   font-size: 1.8em !important;
   padding-left: 110px !important;
@@ -281,14 +293,26 @@ button:focus {
   letter-spacing: 0.5px;
 }
 
+.home-about-heading {
+  font-size: 2.6em;
+  color: #51b3a4;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 .main-name {
   color: #51b3a4;
   font-weight: 700;
   letter-spacing: 0.8px;
 }
+.Typewriter {
+  font-size: 1.2em;
+  padding-left: 50px;
+  letter-spacing: 0.5px;
+}
 /* Typewriter color arrange */
 .Typewriter__wrapper {
-  font-size: 1.3em !important;
+  font-size: 1.2em !important;
   color: #046558 !important;
   font-weight: 600 !important;
 }
@@ -322,7 +346,7 @@ button:focus {
 @media (max-width: 767px) {
   .myAvtar {
     height: 350px;
-    padding-top: 1em !important;
+    padding-top: 0em !important;
     padding-bottom: 1em !important; 
   }
 }
@@ -389,7 +413,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #046558;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -397,13 +421,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #51b3a4;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #51b3a4;
+  box-shadow: 0 0 5px #51b3a4;
+  text-shadow: 0 0 2px #51b3a4;
 }
 
 .social-icons {
@@ -413,20 +437,19 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #046558 !important;
 }
-
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgba(21, 5, 76, 0.45) !important;
-  backdrop-filter: blur(15px) !important;
+  background-color: rgba(14, 21, 40, 0.50) !important;
+  backdrop-filter: blur(1px) !important;
   padding: 1.5rem 0 1rem !important;
   position: relative;
   bottom: 0;
   width: 100vw !important;
-  box-shadow: 0px -10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px -10px 10px 0px rgba(37, 146, 113, 0.03) !important;
   margin: 0 !important;
   left: 0 !important;
 }
@@ -475,7 +498,7 @@ button:focus {
 @media (max-width: 767px) {
   .footer {
     padding: 1rem 0 0.5rem !important;
-    background-color: rgba(21, 5, 76, 0.45) !important;
+    background-color: rgba(14, 21, 40, 0.50) !important;
     width: 100vw !important;
     margin: 0 !important;
     left: 0 !important;
@@ -990,33 +1013,6 @@ p {
   color: #64ffda;
 }
 
-/* Responsive improvements */
-@media (max-width: 767px) {
-  .home-content {
-    padding: 1rem !important;
-  }
-
-  .heading-small {
-    font-size: 1.5em;
-    padding-left: 25px;
-  }
-
-  .heading-big {
-    font-size: 2.2em;
-    padding-left: 25px;
-  }
-
-  .home-about-description {
-    padding: 1rem !important;
-    text-align: center;
-  }
-
-  .home-about-body {
-    text-align: left;
-    padding: 1rem 0;
-  }
-}
-
 body {
   overflow-x: hidden;
   width: 100%;
@@ -1080,6 +1076,198 @@ body {
 
 .resume-btn:hover svg {
   transform: translateY(-1px);
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+
+  .home-section {
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0 60px !important;
+  }
+
+  /* Add this to center the column content */
+  .home-header, 
+  [class*="col-"] {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .heading {
+    font-size: 2.3em !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  .heading-name {
+    font-size: 2em !important;
+    text-align: center !important;
+  }
+
+  .heading-small {
+    font-size: 1.5em;
+    padding-left: 15px;
+  }
+
+  .heading-big {
+    font-size: 2.2em;
+    padding-left: 15px;
+  }
+
+  .home2-section {
+    padding: 50px 0 70px;
+    background: rgba(10, 25, 47, 0.7);
+  }
+
+  .home-about-heading {
+    font-size: 1.8em;
+    margin: 1rem;
+    color: #51b3a4;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .home-about-description {
+    text-align: center;
+  }
+
+  .home-about-body {
+    font-size: 1em !important;
+    text-align: left;
+  }
+
+  .Typewriter {
+    padding-left: 15px;  /* Remove left padding on mobile */
+    text-align: center;
+    width: 100%;  /* Ensure full width */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.1em !important;
+    font-weight: 500 !important;
+    position: relative !important;  /* Changed from absolute */
+    text-align: center;  /* Ensure text is centered */
+    width: auto;  /* Allow width to adjust to content */
+  }
+
+  .Typewriter__cursor {
+    display: inline-block !important;  /* Show cursor */
+  }
+
+  /* Center the image */
+  .home-img {
+    max-width: 200px !important;
+    width: 80% !important;
+    padding: 0 !important;
+    margin: 2rem auto !important;
+  }
+
+  /* Target the parent column specifically */
+  .d-flex.justify-content-center {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Reset any padding that might be interfering */
+  .home-content .row > [class*='col-'] {
+    padding: 0 !important;
+  }
+
+  .home-content {
+    padding: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+
+/* About section mobile improvements */
+@media (max-width: 767px) {
+  .about-section {
+    padding-top: 100px !important;
+    padding-bottom: 30px !important;
+  }
+  
+  /* Section heading */
+  .about-heading {
+    font-size: 2em !important;
+    padding: 10px 0 20px !important;
+  }
+  
+  .section-heading {
+    color: white !important;
+    font-size: 2em !important;
+    font-weight: 500 !important;
+    padding: 20px 0 !important;
+    text-align: center !important;
+  }
+  
+  .quote-card-view {
+    padding: 1.5rem !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+    background: rgba(17, 16, 16, 0.582) !important;
+  }
+  
+  .about-content {
+    padding: 15px !important;
+  }
+  
+  .about-text {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .about-activities {
+    padding: 0 15px !important;
+  }
+  
+  .about-activity {
+    font-size: 0.95rem !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  
+  /* Quote styling */
+  .about-quote {
+    margin-top: 20px !important;
+    font-size: 0.9rem !important;
+    font-style: italic !important;
+    text-align: center !important;
+    color: #51b3a4 !important;
+  }
+  
+  .quote-text {
+    color: #51b3a4 !important;
+    font-size: 1.2em !important;
+    font-style: italic !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .quote-author {
+    color: #8892b0 !important;
+    font-size: 0.9em !important;
+  }
+  
+  .react-activity-calendar rect {
+    rx: 5;
+    ry: 5;
+  }
 }
 
 

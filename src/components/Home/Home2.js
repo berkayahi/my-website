@@ -14,16 +14,14 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              Let Me <span className="green">Introduce</span> Myself
-            </h1>
+          <span className="home-about-heading">Who Am I?</span>
             <p className="home-about-body">
               I'm a passionate Data Engineer with a love for solving complex data problems.
               <br />
               <br />
               My expertise includes
               <i>
-                <b className="green"> C#, Python, FastAPI, React, and many more. </b>
+                <b className="green"> C#, Python, FastAPI, React, and many more</b>.
               </i>
               <br />
               <br />
@@ -32,22 +30,16 @@ function Home2() {
                 <b className="green"> IoT modules </b>
                 and efficient{" "}
                 <b className="green">
-                  data pipelines.
-                </b>
+                  data pipelines
+                </b>.
               </i>
               <br />
               <br />
-              I enjoy working with modern technologies like{" "}
-              <b className="green">React.js</b> and
-              <i>
-                <b className="green">
-                  {" "}
-                  Express.js
-                </b>
-              </i>
+              I also enjoy working with modern technologies like{" "}
+              <b className="green">React.js</b>
               &nbsp;to build
               <i>
-                <b className="green"> scalable and efficient applications</b>
+                <b className="green"> scalable and efficient applications</b>.
               </i>
             </p>
           </Col>

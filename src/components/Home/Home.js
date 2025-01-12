@@ -19,21 +19,14 @@ function Home() {
                 I'm <strong className="main-name">Berkay Ahi</strong>
               </h1>
 
-              <div style={{paddingTop: 0, paddingLeft: "48px"}}>
-                <Type/>
-              </div>
+                <Type className="Typewriter"/>
             </Col>
 
-            <Col md={5} style={{paddingLeft: 140, paddingTop: 50}}>
+            <Col md={5} xs={12} className="d-flex justify-content-center">
               <img
                 src={homeLogo}
                 alt="home pic"
-                style={{
-                  width: "300px",
-                  height: "auto",
-                  maxWidth: "100%",
-                  objectFit: "contain"
-                }}
+                className="home-img"
               />
             </Col>
           </Row>
