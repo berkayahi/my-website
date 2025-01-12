@@ -35,9 +35,9 @@ function AboutCard() {
 
           <div className="about-quote">
             <p className="quote-text">
-              "Her gün kola iç"
+              "Be the change that you wish to see in the world."
             </p>
-            <footer className="quote-author">— Sanjitsu</footer>
+            <footer className="quote-author">— Mahatma Gandhi</footer>
           </div>
         </div>
       </Card.Body>

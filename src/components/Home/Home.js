@@ -19,7 +19,7 @@ function Home() {
                 I'm <strong className="main-name">Berkay Ahi</strong>
               </h1>
 
-              <div style={{paddingTop: 0, paddingLeft: "45px"}}>
+              <div style={{paddingTop: 0, paddingLeft: "48px"}}>
                 <Type/>
               </div>
             </Col>
