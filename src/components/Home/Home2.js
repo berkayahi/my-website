@@ -2,13 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/0.jpg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import Particle from "../Particle";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Home2() {
   return (
@@ -18,39 +15,39 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Some <span className="green"> facts </span> about me!
+              Let Me <span className="green">Introduce</span> Myself
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a passionate Data Engineer with a love for solving complex data problems.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              My expertise includes
               <i>
-                <b className="green"> C++, Javascript and Go. </b>
+                <b className="green"> C#, Python, FastAPI, React, and many more. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              With expertise in C#, Python, .NET, and FastAPI, I specialize in building robust
               <i>
-                <b className="green">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="green"> IoT modules </b>
+                and efficient{" "}
                 <b className="green">
-                  Blockchain.
+                  data pipelines.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="green">Node.js</b> and
+              I enjoy working with modern technologies like{" "}
+              <b className="green">React.js</b> and
               <i>
                 <b className="green">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Express.js
                 </b>
               </i>
-              &nbsp; like
+              &nbsp;to build
               <i>
-                <b className="green"> React.js and Next.js</b>
+                <b className="green"> scalable and efficient applications</b>
               </i>
             </p>
           </Col>
@@ -62,9 +59,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>CONNECT WITH ME</h1>
             <p>
-              Feel free to <span className="green">connect </span>with me
+              Feel free to <span className="green">reach out </span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -72,19 +69,9 @@ function Home2() {
                   href="https://github.com/berkayahi"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -92,19 +79,18 @@ function Home2() {
                   href="https://www.linkedin.com/in/berkayahi/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/ahiontheway"
-                  target="_blank"
+                  href="mailto:berkayahi@gmail.com"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <MdEmail />
                 </a>
               </li>
             </ul>

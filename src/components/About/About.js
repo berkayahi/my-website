@@ -4,7 +4,6 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -13,37 +12,31 @@ function About() {
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="general-text-color">I'M</strong>
+          <Col md={12} className="about-description">
+            <h1 className="about-heading">
+              About <strong className="general-text-color">Me</strong>
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+        </Row>
+
+        <Row>
+          <Col md={12} className="skill-section">
+            <h1 className="section-heading">
+              Professional <strong className="general-text-color">Skillset</strong>
+            </h1>
+            <Techstack />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Technology <strong className="general-text-color">Skillset </strong>
-        </h1>
 
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="general-text-color">Tools</strong> I use
-        </h1>
-        <Toolstack />
+        <Row>
+          <Col md={12} className="tool-section">
+            <h1 className="section-heading">
+              <strong className="general-text-color">Tools</strong> I Use
+            </h1>
+            <Toolstack />
+          </Col>
+        </Row>
 
         <Github />
       </Container>

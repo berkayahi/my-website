@@ -13,31 +13,27 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 className="heading-small">Hi There!</h1>
+              <h1 className="heading-small">Welcome!</h1>
 
-              {/* Larger heading */}
               <h1 className="heading-big">
-                I’m <strong className="main-name">Berkay Ahi</strong>
+                I'm <strong className="main-name">Berkay Ahi</strong>
               </h1>
 
-              <div style={{paddingTop: 0, paddingLeft: "110px"}}>
+              <div style={{paddingTop: 0, paddingLeft: "45px"}}>
                 <Type/>
               </div>
             </Col>
 
             <Col md={5} style={{paddingLeft: 140, paddingTop: 50}}>
               <img
-                  src={homeLogo}
-                  alt="home pic"
-                  // Remove img-fluid if you want a fixed size
-                  // className="img-fluid"
-                  style={{
-                    width: "300px",    // or any fixed size you want
-                    height: "auto",    // keeps aspect ratio
-                    // OR
-                    // maxWidth: "300px",
-                    // maxHeight: "400px",
-                  }}
+                src={homeLogo}
+                alt="home pic"
+                style={{
+                  width: "300px",
+                  height: "auto",
+                  maxWidth: "100%",
+                  objectFit: "contain"
+                }}
               />
             </Col>
           </Row>

@@ -6,35 +6,40 @@ function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            I am <span className="general-text-color">Berkay Ahi </span>
-            from <span className="general-text-color"> Istanbul, Türkiye.</span>
-            <br />
-            I am currently employed as a Data Engineer at Senkron Energy.
-            <br />
-            I have completed Mathematical Engineering at Yildiz Technical University.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+        <div className="about-content">
+          <p className="about-text">
+            Hello! I'm <span className="general-text-color">Berkay Ahi</span>, a Data Engineer based in 
+            <span className="general-text-color"> Istanbul, Türkiye</span>.
           </p>
-          <ul>
+          
+          <p className="about-text">
+            Currently, I'm working at Senkron Energy, where I leverage my Mathematical Engineering 
+            background from Yildiz Technical University to solve complex data challenges.
+          </p>
+
+          <p className="about-text">
+            When I'm not coding, you can find me:
+          </p>
+          
+          <ul className="about-activities">
             <li className="about-activity">
-              <ImPointRight /> Cultural activities
+              <ImPointRight /> Exploring cultural activities
             </li>
             <li className="about-activity">
-              <ImPointRight /> Street photography
+              <ImPointRight /> Capturing moments through street photography
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Discovering new places while travelling
             </li>
           </ul>
 
-          <p style={{ color: "#51b3a4" }}>
-            "Her gün kola iç"{" "}
-          </p>
-          <footer className="blockquote-footer">Sanjitsu</footer>
-        </blockquote>
+          <div className="about-quote">
+            <p className="quote-text">
+              "Her gün kola iç"
+            </p>
+            <footer className="quote-author">— Sanjitsu</footer>
+          </div>
+        </div>
       </Card.Body>
     </Card>
   );
